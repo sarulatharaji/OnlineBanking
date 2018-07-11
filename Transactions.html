@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="fontcolor.css" media="screen" />
+
+<title>Transactions</title>
+</head>
+<body>
+<div class="fontcolor">
+
+
+<div id="header" align="center"><img src="images/obs.png">
+<h3 align="right"><a href="AdminMain.jsp">Home</a>&nbsp;&nbsp;<a href="Logout.jsp" align="right">Logout</a></h3>
+</div>
+	<br/>
+	<form action="dailyTransaction.html" method="post">
+	<table align="center">
+						
+			<tr align="center">
+				<td>View daily transactions</td>
+				<td><input type="submit" value="View Daily Transactions"/></td>
+			</tr>
+		</table>
+	</form>
+	<br/><br/>
+	<form action="monthlyTransaction.html">
+	<table align="center">
+			<tr>
+				<td>View monthly transactions</td>
+				<td>
+					<select name="month" required>
+						<option value="">----Select Month----</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="7">July</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>					
+				</td>
+				<td><input type="submit" value="View Transactions"/></td>
+			</tr>
+			
+		</table>
+		</form>
+		<br/><br/>
+		<form action="qtlyTransaction.html">
+			<table align="center">
+			<tr>
+				<td>View quarterly transactions</td>
+				<td>
+					<select name="quarter" required="required">
+						<option value="">----Select Quarter----</option>
+						<option value="1">First</option>
+						<option value="2">Second</option>
+						<option value="3">Third</option>
+						<option value="4">Fourth</option>
+					</select>					
+				</td>
+				<td><input type="submit" value="View Transactions"/></td>
+			</tr>
+	</table>
+				
+	
+</form>
+</div>
+</body>
+</html>

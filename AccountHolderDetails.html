@@ -1,0 +1,103 @@
+
+
+    
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="fontcolor.css" media="screen" />
+
+<title>Add Account Holder</title>
+</head>
+<body>
+<div align="center" class="fontcolor">
+<div id="header" align="center"><img src="images/obs.png">
+<h3 align="right"><a href="AdminMain.jsp">Home</a>&nbsp;&nbsp;<a href="Logout.jsp" align="right">Logout</a></h3>
+<form id="admin" action="ProcessAddAccountHolder.html" method="post">
+<h2 align="center">Account Holder Registration</h2>
+<table align="center" border="1" cellpadding="3">
+	<tr>
+		<td>
+			Enter account holder name :
+		</td>
+		<td>
+			<input id="customer.customerName" name="customer.customerName" type="text" value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter account holder address :
+		</td>
+		<td>
+			<textarea id="customer.customerAddress" name="customer.customerAddress" rows="5"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter account holder PAN card number :
+		</td>
+		<td>
+			<input id="customer.customerPancard" name="customer.customerPancard" type="text" value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter account holder email Id :
+		</td>
+		<td>
+			<input id="customer.customerEmail" name="customer.customerEmail" type="text" value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter account holder account type :
+		</td>
+		<td>
+		<select id="account.accountType" name="account.accountType"><option value="--Select Type--">--Select Type--</option><option value="Current">Current</option><option value="Savings">Savings</option></select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter account holder opening balance :
+		</td>
+		<td>
+		<input id="account.accountBalance" name="account.accountBalance" type="text" value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter account opening date :
+		</td>
+		<td>
+		<input id="account.accountOpenDate" name="account.accountOpenDate" value="2018-07-11" type="text" value=""/>	
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Select account holder login secret question :
+		</td>
+		<td>
+			<select id="user.userSecretQuestion" name="user.userSecretQuestion"><option value="-----Select Question-----">-----Select Question-----</option><option value="What is your mothers name?">What is your mothers name?</option><option value="What is your birth place?">What is your birth place?</option><option value="What is your favorite dish?">What is your favorite dish?</option></select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Enter answer of secret question :
+		</td>
+		<td>
+			<input id="user.userTransPassword" name="user.userTransPassword" type="text" value=""/>
+		</td>
+	</tr>
+	<tr>
+	<td colspan="2" style="text-align: center;">
+		<input type="submit" value="Register"/>
+		<input type="reset" value="Reset"/>
+	</td>
+	</tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

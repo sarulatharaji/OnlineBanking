@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="fontcolor.css" media="screen" />
+<title>Logout</title>
+<script type="text/javascript">
+	function disable(){
+		window.history.forward();
+	}
+	disable();
+	window.onload=disable();
+	window.onpageshow=function(evt){
+		if(evt.persisted){
+			disable();
+		}
+	}
+	window.onunload=function(){void(0)}
+</script>
+</head>
+<body onload="disable()">
+<div id="header" align="center"><img src="images/obs.png">
+</div>
+<div align="center" class="fontcolor">
+<br/><br/><h3 align="center"><a href="index.jsp">Confirm Logout</a></h3>
+</div>
+</body>
+</html>
